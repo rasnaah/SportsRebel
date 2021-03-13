@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sports Rebel</title>
+  
+	<!-- To create logo in tab -->
+	<link rel="icon" type="image/png" sizes="32x22" href="resources/title_logo.png"> 
+	
+	<meta charset="utf-8"/>
+	<meta name="Rasana Tamrakar" content="Student of Islington"/>
+	<meta name="keyword" content="Sports, Nepal Sports, Sports Gear"/>
+	<meta name="description" content="Sports equipments"/>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+  <link  href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+  
+  <style>
+    
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+      }
+      
+      .price {
+        color: grey;
+        font-size: 22px;
+      }
+      
+      .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      
+
+      body{
+         background-image: url("resources/black.png");
+        background-repeat: no-repeat;
+        background-size: cover; 
+         
+        } 
+          .accordion {
+          
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+       
+        
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+        </style>  
+</head>
+<body>
+	<nav>
+    <a href="index.html"><img src="resources/a.png" class="logo"> </a>
+    <div class="datetime1">
+      <p align="center"id="date"></p>
+
+    <script>
+    function display_date() {
+      document.getElementById('date').innerHTML = Date();
+      setTimeout(display_date,1000);
+    }
+    display_date();
+    // for buttons
+    </script>
+</div>
+			<ul class="main-nav">
+				<li><a href="index.html" >Home</a></li>
+				<li><a href="product.html" class="active">Products</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="signup.html"  class="btn btn-sign" >Sign up</a></li>
+            </ul>
+    </nav>
+    <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              
+              <img src="resources/slider1.jpg">
+              <!-- <div class="text">Caption Text</div> -->
+            </div>
+          
+            <div class="mySlides fade">
+            
+              <img src="resources/slider2.jpg">
+              <!-- <div class="text">Caption Two</div> -->
+            </div>
+          
+            <div class="mySlides fade">
+    
+              <img src="resources/slider3.jpg">
+              <!-- <div class="text">Caption Three</div> -->
+            </div>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+        <div style="margin-top: -50px";>
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+        </div>
+        <!--feature categories -->
+        <!-- adding products with their description -->
+        <div>
+        <table width="100%" border="1">
+          
+            <tr>
+              <th>
+                <section>
+                  
+                  <div class="card">
+                      
+                      <button class="accordion">
+                      <img src="resources/13.jpg" alt="Volleyball" style="width:82%"></button>
+                      
+                      <div class="panel">
+                      <h1>Mikasa Volleyball</h1>
+                      Size:Circumference: 65-67cm<br>
+                      Weight:260-280g<br>
+                      Material:Super Composite Cover<br>
+                      Construction:Laminated<br>
+                      Feature1:Double Dimple Surface<br>
+                      <p class="price">Rs. 1500</p></div>
+                      <p><button><a href="signup.html">Add to Cart</a></button></p>
+                    </div>
+                </section>
+              </th>
+
+              <th>
+                  <section>
+                    
+                    <div class="card">
+                        
+                        <button class="accordion">
+                        <img src="resources/3.jpg" alt="Jersey" style="width:82%"></button>
+                        
+                        <div class="panel">
+                            <h1>Lakers Jersey</h1><br>
+                            Material & Care:Polyester,Machine-wash<br>
+                            Specifications:No Sleeves<br>
+                            Occasion:Sports<br>
+                            Print or Pattern Type:Sports and Team Jersey<br>
+                        <p class="price">Rs. 1000</p></div>
+                        <p><button><a href="signup.html">Add to Cart</a></button></p>
+                      </div>
+                  </section>
+                </th>
+
+                <th>
+                    <section>
+                      
+                      <div class="card">
+                          
+                          <button class="accordion">
+                          <img src="resources/5.jpg" alt="Jersey" style="width:82%"></button>
+                          
+                          <div class="panel">
+                              <h1>Raptors Jersey</h1><br>
+                              Material & Care:Polyester,Machine-wash<br>
+                              Specifications:No Sleeves<br>
+                              Occasion:Sports<br>
+                              Print or Pattern Type:Sports and Team Jersey<br>
+                          <p class="price">Rs. 1600</p></div>
+                          <p><button><a href="signup.html">Add to Cart</a></button></p>
+                        </div>
+                    </section>
+                  </th>
+
+                  <th>
+                      <section>
+                        
+                        <div class="card">
+                            
+                            <button class="accordion">
+                            <img src="resources/1.jpg" alt="Jersey" style="width:82%"></button>
+                            
+                            <div class="panel">
+                                <h1>Jeep Jersey</h1><br>
+                                Brand: Jeep
+                                Material & Care:Polyester,Machine-wash<br>
+                                Specifications:Sleeves<br>
+                                Occasion:Sports<br>
+                                Print or Pattern Type:Sports and Team Jersey<br>
+                            <p class="price">Rs. 1800</p></div>
+                            <p><button><a href="signup.html">Add to Cart</a></button></p>
+                          </div>
+                      </section>
+                    </th>
+              </tr>
+              <tr>
+                <th>
+                  <section>
+                    
+                    <div class="card">
+                        
+                        <button class="accordion">
+                        <img src="resources/9.jpg" alt="Badminton Racquet" style="width:82%"></button>
+                        
+                        <div class="panel">
+                        <h1>Franklin Racquet</h1>
+                        INCLUDES (2) STEEL racquets and (2) A grade shuttlecocks<br>
+                        FEATURES smooth grip racquet handles<br>
+                        TEMPERED STEEL frame construction<br>
+                        BUILT for maximum fun<br>
+                        <p class="price">Rs. 1400</p></div>
+                        <p><button><a href="signup.html">Add to Cart</a></button></p>
+                      </div>
+                  </section>
+                </th>
+  
+                <th>
+                    <section>
+                      
+                      <div class="card">
+                          
+                          <button class="accordion">
+                          <img src="resources/11.jpg" alt="Spalding Basketball" style="width:82%"></button>
+                          
+                          <div class="panel">
+                              <h1>Spalding Basketball</h1><br>
+                              Brand: Spalding<br>
+                              Color:  Brown<br>
+                              Material-Type: Rubber<br>
+                              Number-of-Items: 1<br>
+                              Size: Standard <br>
+                          <p class="price">Rs. 2000</p></div>
+                          <p><button><a href="signup.html">Add to Cart</a></button></p>
+                        </div>
+                    </section>
+                  </th>
+  
+                  <th>
+                      <section>
+                        
+                        <div class="card">
+                            
+                            <button class="accordion">
+                            <img src="resources/4.jpg" alt="Jersey" style="width:82%"></button>
+                            
+                            <div class="panel">
+                                <h1>Jeep Jersey</h1><br>
+                                Brand: Jeep
+                                Material & Care:Polyester,Machine-wash<br>
+                                Specifications:Sleeves<br>
+                                Occasion:Sports<br>
+                                Print or Pattern Type:Sports and Team Jersey<br>
+                            <p class="price">Rs. 1600</p></div>
+                            <p><button><a href="signup.html">Add to Cart</a></button></p>
+                          </div>
+                      </section>
+                    </th>
+  
+                    <th>
+                        <section>
+                          
+                          <div class="card">
+                              
+                              <button class="accordion">
+                              <img src="resources/14.jpg" alt="SS Magnum English Willow Cricket Bat" style="width:82%"></button>
+                              
+                              <div class="panel">
+                                  <h1>Willow Cricket Bat</h1><br>
+                                  Size 2 bat meant for kids of the age group 6-7 years<br>
+                                  Breathable and hydrophilic coating for reducing any condensation in the garment<br>
+                                  Level: Advanced<br>
+                                  Comes with a scale grip<br>
+                                  Bat has concave edges<br>
+                                  <p class="price">Rs. 1800</p></div>
+                              <p><button><a href="signup.html">Add to Cart</a></button></p>
+                            </div>
+                        </section>
+                      </th>
+                </tr>
+            </table>
+          
+            
+        </section>
+        </div>
+<!-- script for slide images -->
+<script>
+
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active2", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active2";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+
+
+        </script> 
+        <!-- for footer -->
+        <footer><table width="100%" border="1">
+            <tr>
+              <th>
+                <!-- inserting internal links -->
+                <p><a href="privacy.html">  Privacy Policy  </a>|
+                <a href="terms.html">  Terms and Condition  </a></p>
+                <p>&copy; SportsRebel</p>
+              </th>
+            </tr>
+          </table>
+        </footer>
+        </body>
+      
+</html>

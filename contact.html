@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sports Rebel</title>
+	<!-- To create logo in tab -->
+	<link rel="icon" type="image/png" sizes="32x22" href="resources/title_logo.png"> 
+	
+	<meta charset="utf-8"/>
+	<meta name="Rasana Tamrakar" content="Student of Islington"/>
+	<meta name="keyword" content="Sports, Nepal Sports, Sports Gear"/>
+	<meta name="description" content="Sports equipments"/>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+    <link  href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+    <style>
+		/* for background  */
+    body{
+        background-image: url("resources/black.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+</head>
+<body>
+	<nav>
+		<a href="index.html"><img src="resources/a.png" class="logo"> </a>
+		<div class="datetime1">
+        	<p align="center"id="date"></p>
+<!-- for date and time -->
+    		<script>
+	      function display_date() {
+	        document.getElementById('date').innerHTML = Date();
+	        setTimeout(display_date,1000);
+	      }
+	      display_date();
+  
+    		</script>
+		</div>
+		<!-- for buttons -->
+			<ul class="main-nav">
+				<li><a href="index.html" >Home</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="contact.html" class="active">Contact us</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="signup.html"  class="btn btn-sign" >Sign up</a></li>
+            </ul>
+    </nav>
+    <div class="contact-title">
+        <h1>Contact Form</h1>
+    <form name="messageForm" onsubmit="validateForm()">
+			<p>Name: <input type="text" name="name"></p>
+			<p>E-mail: <input type="text" name="email"></p>
+			<p>Message: <br><br><textarea name="message" rows="5" cols="40" placeholder="Enter Message"></textarea></p>
+			<p><button>Send</button></p>
+		</form>
+		<script>
+			function validateForm() {
+				var name = document.forms["messageForm"]["name"].value;
+				var email = document.forms["messageForm"]["email"].value;
+				var message = document.forms["messageForm"]["message"].value;
+// for pop up message
+				if (name == "" || email == "" || message == ""){
+					alert("The field is empty. Please fill the form.");
+				}
+				else {
+					alert("Thank you for messaging us!");
+				}
+			}
+		</script>
+		 <!-- <footer> -->
+			 <table width="100%" border="1">
+				<tr>
+				  <th>
+					  
+					<!-- inserting internal links -->
+					<p><a href="privacy.html">  Privacy Policy  </a>|
+					<a href="terms.html">  Terms and Condition  </a></p>
+					<p>&copy; SportsRebel</p>
+				  </th>
+				</tr>
+			  </table>
+			<!-- </footer> -->
+	</div>
+	
+	
+    
+</body>
+</html>
+    

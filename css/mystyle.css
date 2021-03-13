@@ -1,0 +1,559 @@
+* {box-sizing: border-box;}
+html
+/* for smooth scroll */
+{
+  scroll-behavior: smooth;
+}
+body
+{
+    margin: 0 auto;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+header
+{
+  /* for background image */
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url('../resources/slider1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+
+}
+nav
+/* for fixing the position of navigation bar */
+{
+  padding: 10px 30px;
+  position: absolute;
+  z-index: 999999;
+}
+.logo
+/* for fixing the position of logo */
+{
+  height: auto;
+  width: 120px;
+  float: left;
+  margin-top: 10px;
+}
+
+.main-nav
+{
+  float: right;
+  margin-left: 230px;
+}
+
+.main-nav li
+{
+  display: inline-block;
+  list-style: none;
+  margin-left: 50px;
+}
+
+.main-nav li a
+{
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+
+}
+.main-nav .active
+{
+font-weight: bold;
+}
+.main-nav li a:hover
+{
+ border-bottom: 1px solid white;
+}
+/* setting the size of header and buttons in home page */
+.main-content-header
+{
+  width: 1180px;
+  position: absolute;
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* setting the color of header in home page */
+h1{
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 200%;
+  margin-bottom: 20px;
+  font-weight: lighter;
+
+}
+
+.btn
+{
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2;
+
+
+}
+/* styling the sign up button */
+.btn-sign {
+  background-color:rgb(20, 87, 35);
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
+/* changing the color of sign up button after hover */
+.btn-sign:hover{
+  background-color: green;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* styling the first button of home page */
+.btn-a{
+  background-color: transparent;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
+/* changing color right after hover */
+.btn-a:hover{
+  background-color: green;
+}
+/* styling the second button of home page */
+.btn-b{
+  background-color: transparent;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
+/* to turn the buttons green while hovering */
+.btn-b:hover{
+  background-color: green;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  padding-top:-300px;
+  background-color: black;
+  height: 400px;
+}
+.slideshow-container img
+{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active2, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* basic styling for contact form */
+.contact{
+  margin-top: 100px;
+  color: white;
+  text-transform: uppercase;
+  
+}
+section{
+  float: right;
+}
+/* turning the heading two into black font */
+h2{
+  color: black;
+  
+}
+/* for icons */
+.fa {
+  padding: 30px;
+  font-size: 30px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+}
+
+.fa{
+  display: inline;
+  
+
+}
+/* changing opacity of icons while hover */
+.fa:hover {
+    opacity: 0.7;
+    
+}
+/* for facebook icon */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+/* for google icon */
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+/* for twitter icon */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+/* for instagram icon */
+.fa-instagram {
+  background: #f19a27;
+  color: white;
+}
+/* styling the footer */
+footer{
+  
+  color: black;
+  
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  
+ 
+
+}
+/* styling the lnks in footer */
+footer a{
+  color: #717171;
+  
+}
+
+table{
+  border: transparent;
+  /* margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* width: 100%;  */
+
+  
+}
+
+
+
+/* styling the contact form text*/
+.contact-title{
+  position: absolute;
+  text-align: 10px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;  
+}
+.contact-title table tr a{
+  color: grey;
+}
+/* styling the contact form heading */
+.contact-title h1{
+  font-size: 50px;
+}
+
+.contact-title footer{
+  width: 100%
+
+}
+.form{
+  position: absolute;
+  top: 220%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* styling the input box */
+input{
+  width: 100%;
+  margin: 20px 0;
+  background: rgba(216, 198, 198, 0);
+  border: none;
+  border-bottom: 1px solid rgb(232, 232, 236);
+  color: azure; 
+}
+
+#msg{
+  margin-top: 60px;
+}
+
+::-webkit-input-placeholder{
+  color: rgb(199, 188, 188);
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+/* styling send button */
+button{
+  padding: 11px 22px;
+  font-size: 16px;
+  background: #0f810f;
+  border: none;
+  border-radius: 1px;
+  margin-top: 20px;
+  /* opacity: 0.6; */
+  color: white;
+}
+
+button:hover{
+  color: black;
+}
+
+.card{
+  color: grey;
+}
+.card h1{
+  
+  color: rgb(250, 246, 246);
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  display: inline;
+  margin: 0 auto;  
+}
+
+
+div.card p button a{
+  color: #bbb;
+} 
+
+.signup-title{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+ 
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+  display: inline;
+}
+
+.zoom-effect-container {
+    
+    position: relative;
+    width: 250px;
+    height: 360px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    
+  
+}
+
+.image-card{
+  position: absolute;
+  text-align: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(20, 2, 2);  
+}
+
+.image-card img{
+  font-size: 50px;
+} */
+/* .image-card {
+  position: middle;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  
+} */
+ 
+.image-card img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  
+}
+
+.image-card a img{
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  display: block;
+  
+} 
+
+.zoom-effect-container:hover .image-card img {
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
+  color: rgb(248, 238, 238);
+  font-family: Arial, Helvetica, sans-serif;
+  
+}  
+
+.products{
+  text-align: center;
+}
+.products h1{
+  color: black;
+}
+
+@font-face
+{
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+
+  textarea{
+  opacity: 0.3;
+  
+} 
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover)
+.active, .accordion:hover {
+  background-color: #ccc;
+} */
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.blogacc{
+  position: absolute;
+  text-align: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(20, 2, 2);  
+}
+
+.blogacc h1{
+  font-size: 50px;
+}
+/* styling the texts in research page */
+.research-title{
+  position: absolute;
+  text-align: center;
+  top: 210%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;  
+  padding: 18px;
+}
+
+.research-title h1{
+  font-size: 50px;
+}
+/* changing the color of date and time with white fonts */
+.datetime1{
+  color: white;
+}
+.signup-title{
+  top: 55%;
+}
+

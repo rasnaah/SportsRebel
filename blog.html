@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sports Rebel</title>
+	<!-- To create logo in tab -->
+	<link rel="icon" type="image/png" sizes="32x22" href="resources/title_logo.png"> 
+	
+	<meta charset="utf-8"/>
+	<meta name="Rasana Tamrakar" content="Student of Islington"/>
+	<meta name="keyword" content="Sports, Nepal Sports, Sports Gear"/>
+	<meta name="description" content="Sports equipments"/>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+    <link  href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+    
+    <style>
+            .accordion {
+              
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+            
+             .active, .accordion:hover {
+             
+            }
+            
+            .panel {
+              padding: 0 18px;
+              display: none;
+              background-color: white; 
+              overflow: hidden;
+            }
+            </style>
+</head>
+<body>
+        <header>
+
+                <nav>
+                    <a href="index.html"><img src="resources/a.png" class="logo"> </a>
+                    <!-- for date and time -->
+                    <div class="datetime1">
+                      <p align="center"id="date"></p>
+            
+                    <script>
+                    function display_date() {
+                      document.getElementById('date').innerHTML = Date();
+                      setTimeout(display_date,1000);
+                    }
+                    display_date();
+              
+                    </script>
+                </div>
+                <!-- for buttons -->
+                        <ul class="main-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="blog.html" class="active">Blog</a></li>
+                            <li><a href="research.html">Research</a></li>
+                            <li><a href="signup.html"  class="btn btn-sign" >Sign up</a></li>
+        
+                            </ul>
+                            </nav>
+                            <div class="blogacc">
+                            <h1>Impact of Technology on Business</h1><br><br><br><br>
+
+                            <button class="accordion"><img src="resources/business.jpeg" width="40%"></button>
+                            <div class="panel">
+                              <!-- writing the blog -->
+                            <p>
+                              <h2>Impact of Technology on Business.</h2><br>Todays world is all about Technology.Technology has changed business in the evolution of making more profit in business
+                               with high speed, to get more customers, to be able to serve more people worldwide, to improve the product and services quality,
+                               speed up a business process, less use of human power in high-risk intensive works.Technology has revolutionized the way companies
+                                conduct business by enabling small businesses to level the playing field with larger organizations. Small businesses use an array 
+                                of tech – everything from servers to mobile devices – to develop competitive advantages in the economic marketplace. Small business
+                                 owners should consider implementing technology in their planning process for streamlined integration and to make room for future
+                                  expansion. This allows owners to create operations using the most effective technology available.</p>
+                                  
+
+                                  <h3>Improved Communication Processes</h3>
+                                  Business technology helps small businesses improve their communication processes. Emails, texting, websites and apps, for example, facilitate 
+                                  improved communication with consumers. Using several types of information technology communication methods enable companies to saturate the economic
+                                   market with their message. Companies may also receive more consumer feedback through these electronic communication methods.
+                                  
+                                  Technology also improves inter-office communication as well. For example, social intranet software gives employees a centralizes portal to access
+                                   and update internal documents and contracts and relay relevant data to other departments instantly. These methods also help companies reach
+                                    consumers through mobile devices in a real-time format.
+                                  
+
+
+                            </div>
+                            </div>
+                            <!-- Using accordion script for displaying the blog after clicking image -->
+                            <script>
+                            var acc = document.getElementsByClassName("accordion");
+                            var i;
+                            
+                            for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function() {
+                                this.classList.toggle("active");
+                                var panel = this.nextElementSibling;
+                                if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                                } else {
+                                panel.style.display = "block";
+                                }
+                            });
+                            }
+                            </script>
+                           
+</body>
+</html>

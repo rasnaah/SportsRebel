@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sports Rebel</title>
+	<!-- To create logo in tab -->
+	<link rel="icon" type="image/png" sizes="32x22" href="resources/title_logo.png"> 
+	
+	<meta charset="utf-8"/>
+	<meta name="Rasana Tamrakar" content="Student of Islington"/>
+	<meta name="keyword" content="Sports, Nepal Sports, Sports Gear"/>
+	<meta name="description" content="Sports equipments"/>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+    <link  href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+    <style>
+		/* for background */
+    body{
+        background-image: linear-gradient(rgba(10, 6, 6, 0),rgb(0, 0, 0)), url('resources/gg.jpg');
+        background-repeat: no-repeat;
+		background-size: cover;
+		
+    }
+    
+    
+    </style>
+</head>
+<body>
+	<nav>
+		<a href="index.html"><img src="resources/a.png" class="logo"> </a>
+		<!-- to display date and time -->
+		<div class="datetime1">
+        	<p align="center"id="date"></p>
+
+    		<script>
+	      function display_date() {
+	        document.getElementById('date').innerHTML = Date();
+	        setTimeout(display_date,1000);
+	      }
+	      display_date();
+  
+    		</script>
+		</div>
+		<!-- for buttons -->
+			<ul class="main-nav">
+				<li><a href="index.html" >Home</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="signup.html"  class="btn btn-sign" >Sign up</a></li>
+            </ul>
+    </nav>
+    
+    <div class="signup-title">
+		<!-- for creating form -->
+    <h1>Create an account</h1>
+		<table class="border">
+			<tr>
+			<td style="padding:5px;">First Name: </td><td style="padding:5px;"><input id="fname" type="text"/></td>
+            </tr>
+            <tr>
+            <td style="padding:5px;">Last Name: </td><td style="padding:5px;"><input id="lname" type="text"/></td>
+             </tr>
+			
+			<tr><td style="padding:5px;">Contact no: </td><td style="padding:5px;"><input id="contactno" type="text"/></td></tr>
+			<tr><td style="padding:5px;">Address: </td><td style="padding:5px;"><input id="address" type="text"/></td></tr>
+			<tr><td style="padding:5px;">E-mail: </td><td style="padding:5px;"><input id="email" type="text"/></td></tr>
+			<tr><td style="padding:5px;">DOB: </td><td style="padding:5px;"><input id="dob" type="text"/></td></tr>
+			
+		</table><br>
+		<button onclick="signn()">Sign up</button> 
+		
+		
+		
+		<section id="report" style="display:None">
+            <p>First Name: <span id="forfname"></span></p>
+            <p>Last Name: <span id="forlname"></span></p>
+			<p>Contact no.: <span id="forcontactno"></span></p>
+			<p>Address: <span id="foraddress"></span></p>
+			<p>E-mail: <span id="foremail"></span></p>
+			<p>DOB: <span id="fordob"></span></p>
+		</section>
+		<!-- for pop up message -->
+		<script>
+			function signn(){
+				var fname = document.getElementById('fname').value;
+                var lname = document.getElementById('lname').value;
+				var contactno = document.getElementById('contactno').value;
+				var address = document.getElementById('address').value;
+				var email = document.getElementById('email').value;
+				var dob = document.getElementById('dob').value;
+				
+				if (fname == "" || lname == "" || contactno == "" || address == "" || email == "" || dob == ""){
+					alert("The field is empty. Please fill the form.");
+				}
+				else {
+					alert("Your account is created successfully!");
+				}
+			}
+			
+        </script>
+		</div>
+		
+
+    </body>
+</html>

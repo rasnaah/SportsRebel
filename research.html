@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sports Rebel</title>
+	<!-- To create logo in tab -->
+	<link rel="icon" type="image/png" sizes="32x22" href="resources/title_logo.png"> 
+	
+	<meta charset="utf-8"/>
+	<meta name="Rasana Tamrakar" content="Student of Islington"/>
+	<meta name="keyword" content="Sports, Nepal Sports, Sports Gear"/>
+	<meta name="description" content="Sports equipments"/>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0"/>
+    <link  href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+    <style>
+        /* setting background color */
+    body{
+        background-color: rgb(4, 124, 30);
+    }
+    </style>
+</head>
+<body>
+        
+
+                <nav>
+                    <a href="index.html"><img src="resources/a.png" class="logo"> </a>
+                    <!-- for displaying date and time -->
+                    <div class="datetime1">
+                        <p align="center"id="date"></p>
+            
+                        <script>
+                      function display_date() {
+                        document.getElementById('date').innerHTML = Date();
+                        setTimeout(display_date,1000);
+                      }
+                      display_date();
+              
+                        </script>
+                    </div>
+                    <!-- for buttons -->
+                        <ul class="main-nav">
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="research.html" class="active">Research</a></li>
+                            <li><a href="signup.html"  class="btn btn-sign" >Sign up</a></li>
+        
+                        </ul>
+                </nav>
+                
+                <div class="research-title">
+                    <h1>Research</h1>
+                    <!-- <p>Use the style attribute to specify the width and height of an image:</p>
+                    <img src="resources/adidas.png" alt="Adidas Website" style="width:500px;height:600px;"> -->
+                    <table width="100%">
+                    <tr>
+                            <h1><u>Adidas</u></h1>
+                <a href="http://www.adidas.com">
+                    <img src="resources/adidas.png" width="100%"></a>
+                    <p>This is the official site of Adidas. It is very popular leading sports wear website.The buttons layered on the top of the image in their home page is quite similar to our home page.</p> 
+                    </tr>
+                    <tr>
+                            <h1><u>Amazon</u></h1>
+                    <a href="http://www.amazon.com">
+                    <img src="resources/amazon.png" width="100%"></a> 
+                    <p>This is the official site of Amazon. It is very popular online shopping website.The slide images in the home page is a bit common to the slide images of our product page.</p> 
+                    </tr>
+                    <h1><u>Khalti</u></h1>
+                    <a href="http://www.khalti.com">
+                        <img src="resources/khalti.png" width="100%"></a>
+                        <p>This is the official site of Khalti. Khalti is one of the popular nepali digital payment website. It can be noticed that the signup button of this website and our website have quite similar oval shaped design.</p> 
+                        </tr>
+                        <tr>
+                                <h1><u>E-sewa</u>
+                        <a href="http://www.esewa.com.np">
+                        <img src="resources/e-sewa.png" width="100%"></a> 
+                        </h1><p>This is the official site of E-sewa. It is also one of the popular digital payment website of Nepal. The product page of this site is a bit similar to our product page.</p> 
+                        </tr>
+                        <tr>
+                                <h1><u>Alibaba</u>
+                        <a href="http://www.alibaba.com.np">
+                        <img src="resources/alibaba.png" width="100%"></a> 
+                        </h1><p>This is the official site of Alibaba. It is very popular online shopping website. The small button below the products of this page is quite similar to my "Add to Cart" button below the products of my product page.</p> 
+                        </tr>
+                </div>
+                <div class="researchfoot">
+                <table width="100%" border="1">
+                        <tr>
+                          <th>
+                            <!-- inserting internal links -->
+                            <p><a href="privacy.html">  Privacy Policy  </a>|
+                            <a href="terms.html">  Terms and Condition  </a></p>
+                            <p>&copy; SportsRebel</p>
+                          </th>
+                        </tr>
+                      </table>
+                    </footer>
+                    
+</div>
+</body>
+</html>
